@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --dark-green: #155724;
+    --black: #000000;
+    --light-blue: #d1ecf1;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h2, h4 {
+    color: var(--primary-color);
+  }
+  
+  a.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  a.btn-info {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    color: var(--dark-green);
+  }
+  
+  a.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .contact-section {
+    padding: 20px 0;
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .whatsapp-button img {
+    width: 50%;
+    height: 50%;
+  }
+  
+  @media (min-width: 768px) {
+    .whatsapp-button {
+        display: none;
+    }
+  }
+  

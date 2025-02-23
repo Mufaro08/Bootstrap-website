@@ -1,0 +1,263 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --dark-green: #155724;
+    --black: #000000;
+    --light-blue: #d1ecf1;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+  .navbar {
+    background-color: var(--primary-color);
+  }
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+  }
+  .nav-link {
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+  }
+  .nav-link:hover {
+    color: var(--secondary-color);
+    background-color: var(--light-blue);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .header-section {
+    height: 70vh;
+    background-image: url('https://learn.g2.com/hubfs/small%20business%20taxes-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .header-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .header-subtitle {
+    font-size: 1.5em;
+  }
+
+  #company-overview {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  #company-overview h4 {
+    margin-top: 20px;
+    color: var(--primary-color);
+  }
+  
+  #company-overview p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--black);
+  }
+  
+  #our-story {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  #our-story p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--black);
+  }
+  
+  #our-story img {
+    max-width: 100%;
+    border: 4px solid var(--primary-color);
+    border-radius: 10px;
+  }
+  #our-team {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  .team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .team-member img {
+    max-width: 150px;
+    border: 4px solid var(--primary-color);
+  }
+  
+  .team-member h4 {
+    margin-top: 15px;
+    color: var(--primary-color);
+  }
+  
+  .team-member p.text-muted {
+    color: var(--secondary-color);
+  }
+  #our-services {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  .service-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .service-box h4 {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+  
+  .service-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--black);
+  }
+  #milestones {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  .milestone-box {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .milestone-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .milestone-box h4 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .milestone-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--black);
+  }
+  #contact-info {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  .contact-info {
+    background-color: var(--light-blue);
+    padding: 30px;
+    color: var(--black);
+    border-radius: 5px;
+  }
+          
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .whatsapp-button img {
+    width: 50%;
+    height: 50%;
+  }
+  
+  @media (min-width: 768px) {
+    .whatsapp-button {
+        display: none;
+    }
+  }
+  
