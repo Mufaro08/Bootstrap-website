@@ -554,3 +554,11 @@
   color: var(--secondary-color);
 }
 
+#thanks{
+  background-color: var(--light-blue);
+}
+
+#thanks h3{
+  color: var(--primary-color);
+}
+
