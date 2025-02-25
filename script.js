@@ -21,7 +21,7 @@ AOS.init({
 
 
   function initMap() {
-    var location = { lat: -17.895121230938088, lng: 31.191572435872377 };
+    var location = { lat: -17.8906861, lng: 31.1927182 };
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 15,
       center: location
